@@ -1,19 +1,34 @@
+# 📘 Assignment: Jogo da Forca em Python
 
-# 🎮 Desafio: Jogo da Forca
+## 🎯 Objective
 
-Construa o clássico jogo de adivinhar palavras usando strings, loops e entrada de dados do usuário em Python.
+Construa um jogo da Forca em Python para praticar manipulação de strings, listas, condicionais e loops. O jogador tentará descobrir uma palavra secreta antes de esgotar o número de tentativas.
 
-## 🎯 O Que Você Vai Construir
+## 📝 Tasks
 
-Crie um jogo da Forca onde os jogadores adivinham letras para revelar uma palavra oculta antes de esgotar as tentativas.
+### 🛠️ Preparar a Palavra e o Progresso do Jogo
 
-**Habilidades praticadas:** Manipulação de strings, loops, condicionais, seleção aleatória
+#### Descrição
+Crie a estrutura inicial do jogo: selecione uma palavra secreta de uma lista e prepare a representação que será exibida ao jogador.
 
-## ✅ Requisitos Obrigatórios
+#### Requisitos
+O programa concluído deve:
 
-Seu jogo deve:
-- Selecionar palavras aleatoriamente de uma lista predefinida
-- Aceitar palpites de letras e mostrar o progresso atual (formato _ _ _)
-- Rastrear tentativas incorretas restantes
-- Encerrar quando a palavra for adivinhada ou as tentativas esgotarem
-- Exibir mensagens de vitória/derrota
+- Manter uma lista predefinida com pelo menos cinco palavras.
+- Selecionar aleatoriamente uma palavra da lista.
+- Exibir cada letra ainda não descoberta como `_`, preservando as posições das letras já acertadas.
+- Inicializar e acompanhar um limite de tentativas incorretas.
+
+### 🛠️ Implementar os Palpites e o Encerramento
+
+#### Descrição
+Permita que o jogador tente adivinhar letras, atualize o progresso a cada palpite e encerre a partida quando a palavra for descoberta ou as tentativas acabarem.
+
+#### Requisitos
+O programa concluído deve:
+
+- Solicitar um palpite de uma letra por rodada e informar se ela está na palavra.
+- Atualizar as letras reveladas quando o palpite estiver correto.
+- Reduzir as tentativas restantes quando o palpite estiver incorreto.
+- Continuar até que todas as letras sejam descobertas ou não restem tentativas.
+- Exibir uma mensagem de vitória ou derrota e revelar a palavra secreta ao final.
